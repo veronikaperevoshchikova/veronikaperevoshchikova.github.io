@@ -1,4 +1,0 @@
-Hello
-Hi
-ooo
-pppp
