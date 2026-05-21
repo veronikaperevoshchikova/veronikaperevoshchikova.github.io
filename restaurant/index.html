@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Flavour</title>
-    <!-- ПОДКЛЮЧАЕМ ШРИФТЫ -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -29,7 +28,6 @@
             padding: 0 32px;
         }
 
-        /* ЗАГОЛОВКИ — Playfair Display */
         h1, h2, h3, .nav-links a, .section-sub, .btn-reserve, .price-badge, .footer-logo h3, .footer-contacts h4, .footer-hours h4 {
             font-family: 'Playfair Display', serif;
         }
@@ -163,7 +161,6 @@
             font-family: 'Inter', sans-serif;
         }
 
-        /* ABOUT RESTAURANT - ЛЕВОЕ ВЫРАВНИВАНИЕ + ФОТО CHEF */
         .about-restaurant {
             display: flex;
             gap: 60px;
@@ -193,7 +190,6 @@
             font-family: 'Inter', sans-serif;
         }
 
-        /* ФОТО ШЕФА С ПОДПИСЬЮ */
         .chef-photo {
             flex: 1;
             border-radius: 16px;
@@ -213,7 +209,6 @@
             transform: scale(1.02);
         }
 
-        /* СТРОКА С ИМЕНАМИ ШЕФ-ПОВАРОВ ПОД ФОТО */
         .chef-name {
             text-align: center;
             margin-top: 16px;
@@ -225,7 +220,6 @@
             letter-spacing: 0.5px;
         }
 
-        /* СЕТКА: СТРОГО 5 КОЛОНОК, БЕЗ АДАПТИВНОСТИ */
         .menu-wrapper {
             display: flex;
             justify-content: center;
@@ -383,7 +377,6 @@
             font-family: 'Inter', sans-serif;
         }
 
-        /* Убираем адаптивность - фиксированная ширина для всех экранов */
         @media (max-width: 1300px) {
             .container {
                 max-width: 1280px;
@@ -432,7 +425,6 @@
                     <h2>RUSSIAN TASTES IN EUROPEAN TRADITIONS</h2>
                     <p>This menu is about warmth that can't always be explained in words. About care hidden in the details. And about a taste that stays with you longer than expected. I work with local products from our region and communicate Russian traditions in the modern language of European techniques.</p>
                 </div>
-                <!-- ФОТО CHEF.JPG С ПОДПИСЬЮ -->
                 <div class="chef-photo">
                     <img src="images/chef.jpg" alt="Our Chef" onerror="this.src='https://placehold.co/400x500/F5F5F5/8B2C2D?text=Chef+Photo'">
                     <div class="chef-name">
