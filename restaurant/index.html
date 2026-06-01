@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Flavour</title>
+    <title>Flavour | Gastrobar</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -19,7 +19,6 @@
             background-color: #FFFFFF;
             color: #1E1E1E;
             line-height: 1.5;
-            scroll-behavior: smooth;
         }
 
         .container {
@@ -28,7 +27,7 @@
             padding: 0 32px;
         }
 
-        h1, h2, h3, .nav-links a, .section-sub, .btn-reserve, .price-badge, .footer-logo h3, .footer-contacts h4, .footer-hours h4 {
+        h1, h2, h3, .nav-links a, .section-sub, .price-badge, .footer-logo h3, .footer-contacts h4, .footer-hours h4 {
             font-family: 'Playfair Display', serif;
         }
 
@@ -245,7 +244,6 @@
             width: fit-content;
         }
 
-        /* Кнопки навигации */
         .carousel-btn {
             position: absolute;
             top: 50%;
@@ -279,7 +277,6 @@
             right: 0;
         }
 
-        /* Элемент меню */
         .menu-item-card {
             background: #FFFFFF;
             border-radius: 16px;
@@ -339,27 +336,6 @@
             color: #8B2C2D;
             font-size: 0.75rem;
             letter-spacing: 0.5px;
-        }
-
-        .btn-reserve {
-            background: #8B2C2D;
-            color: white;
-            border: none;
-            padding: 14px 36px;
-            border-radius: 40px;
-            font-weight: 600;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: 0.2s;
-            margin-top: 28px;
-            display: inline-block;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .btn-reserve:hover {
-            background: #6B2021;
-            transform: scale(1.02);
         }
 
         footer {
@@ -426,164 +402,14 @@
             font-family: 'Inter', sans-serif;
         }
 
-        /* Адаптивность */
-        @media (max-width: 1024px) {
-            .container {
-                padding: 0 24px;
-            }
-            h2 {
-                font-size: 2.5rem;
-            }
-            .hero h1 {
-                font-size: 3.5rem;
-            }
-            .hero p {
-                font-size: 1.1rem;
-            }
-            .carousel-btn {
-                width: 36px;
-                height: 36px;
-                font-size: 0.9rem;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                padding: 0 16px;
-            }
-            h2 {
-                font-size: 2rem;
-                text-align: center;
-            }
-            .section-sub {
-                text-align: center;
-                font-size: 0.85rem;
-            }
-            header {
-                padding: 15px 0;
-            }
-            .logo-img {
-                height: 40px;
-            }
-            .menu-icon {
-                display: block;
-            }
-            .nav-links {
-                display: none;
-                flex-direction: column;
-                width: 100%;
-                background: #FFFFFF;
-                padding: 20px;
-                border-radius: 16px;
-                margin-top: 20px;
-                gap: 1.2rem;
-                text-align: center;
-                box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-                border: 1px solid #EEEEEE;
-            }
-            .nav-links.active {
-                display: flex;
-            }
-            .nav-links a {
-                font-size: 0.95rem;
-            }
-            section {
-                padding: 50px 0;
-            }
-            .hero {
-                padding: 80px 0;
-            }
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            .hero p {
-                font-size: 0.95rem;
-            }
-            .about-restaurant {
-                flex-direction: column;
-                gap: 32px;
-            }
-            .about-text h2 {
-                text-align: center;
-            }
-            .about-text .section-sub {
-                text-align: center;
-            }
-            .about-text p {
-                font-size: 1rem;
-                text-align: center;
-            }
-            .chef-photo {
-                max-width: 400px;
-                margin: 0 auto;
-            }
-            .carousel-btn {
-                width: 32px;
-                height: 32px;
-                font-size: 0.8rem;
-            }
-            .carousel-track {
-                gap: 16px;
-            }
-            .menu-item-card {
-                width: 200px;
-            }
-            .card-image {
-                width: 200px;
-                height: 238px;
-            }
-            .footer-content {
-                flex-direction: column;
-                gap: 32px;
-                text-align: center;
-            }
-            .footer-contacts p {
-                justify-content: center;
-            }
-        }
-
-                @media (max-width: 480px) {
-            .menu-item-card {
-                width: 170px;
-            }
-            .card-image {
-                width: 170px;
-                height: 202px;
-            }
-            .card-content {
-                padding: 10px;
-            }
-            .card-content h3 {
-                font-size: 0.7rem;
-            }
-            .card-content p {
-                font-size: 0.6rem;
-            }
-            .carousel-btn {
-                width: 28px;
-                height: 28px;
-                font-size: 0.7rem;
-            }
-        }
-        
-        html {
-            scroll-padding-top: 80px;
-            scroll-behavior: smooth;
-        }
-        
-        @media (max-width: 768px) {
-            html {
-                scroll-padding-top: 110px;
-            }
-        }
-                /* ========== СТИЛИ ДЛЯ ОТЗЫВОВ ========== */
+        /* ========== СТИЛИ ДЛЯ ОТЗЫВОВ ========== */
         .reviews-container {
             margin-top: 48px;
         }
         
         .reviews-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: repeat(3, 1fr);
             gap: 30px;
             margin-bottom: 60px;
         }
@@ -688,14 +514,162 @@
         .submit-review-btn:hover {
             background: #6B2021;
         }
+
+        /* Адаптивность */
+        html {
+            scroll-padding-top: 80px;
+            scroll-behavior: smooth;
+        }
         
+        @media (max-width: 1024px) {
+            .container {
+                padding: 0 24px;
+            }
+            h2 {
+                font-size: 2.5rem;
+            }
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+            .hero p {
+                font-size: 1.1rem;
+            }
+            .carousel-btn {
+                width: 36px;
+                height: 36px;
+                font-size: 0.9rem;
+            }
+            .reviews-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
         @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+            h2 {
+                font-size: 2rem;
+                text-align: center;
+            }
+            .section-sub {
+                text-align: center;
+                font-size: 0.85rem;
+            }
+            header {
+                padding: 15px 0;
+            }
+            .logo-img {
+                height: 40px;
+            }
+            .menu-icon {
+                display: block;
+            }
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background: #FFFFFF;
+                padding: 20px;
+                border-radius: 16px;
+                margin-top: 20px;
+                gap: 1.2rem;
+                text-align: center;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+                border: 1px solid #EEEEEE;
+            }
+            .nav-links.active {
+                display: flex;
+            }
+            .nav-links a {
+                font-size: 0.95rem;
+            }
+            section {
+                padding: 50px 0;
+            }
+            .hero {
+                padding: 80px 0;
+            }
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero p {
+                font-size: 0.95rem;
+            }
+            .about-restaurant {
+                flex-direction: column;
+                gap: 32px;
+            }
+            .about-text h2 {
+                text-align: center;
+            }
+            .about-text .section-sub {
+                text-align: center;
+            }
+            .about-text p {
+                font-size: 1rem;
+                text-align: center;
+            }
+            .chef-photo {
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            .carousel-btn {
+                width: 32px;
+                height: 32px;
+                font-size: 0.8rem;
+            }
+            .carousel-track {
+                gap: 16px;
+            }
+            .menu-item-card {
+                width: 200px;
+            }
+            .card-image {
+                width: 200px;
+                height: 238px;
+            }
+            .footer-content {
+                flex-direction: column;
+                gap: 32px;
+                text-align: center;
+            }
+            .footer-contacts p {
+                justify-content: center;
+            }
             .reviews-grid {
                 grid-template-columns: 1fr;
                 gap: 20px;
             }
             .review-form-container {
                 padding: 20px;
+            }
+            html {
+                scroll-padding-top: 110px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .menu-item-card {
+                width: 170px;
+            }
+            .card-image {
+                width: 170px;
+                height: 202px;
+            }
+            .card-content {
+                padding: 10px;
+            }
+            .card-content h3 {
+                font-size: 0.7rem;
+            }
+            .card-content p {
+                font-size: 0.6rem;
+            }
+            .carousel-btn {
+                width: 28px;
+                height: 28px;
+                font-size: 0.7rem;
             }
         }
     </style>
@@ -716,6 +690,7 @@
                 <li><a href="#history">RUSSIAN TASTES</a></li>
                 <li><a href="#special">SPECIAL MENU</a></li>
                 <li><a href="#cocktails">COCKTAILS</a></li>
+                <li><a href="#reviews">REVIEWS</a></li>
                 <li><a href="#contacts">CONTACTS</a></li>
             </ul>
         </div>
@@ -748,7 +723,6 @@
         </div>
     </section>
 
-    <!-- КАРУСЕЛЬ ДЛЯ ЕДЫ -->
     <section id="special">
         <div class="container">
             <div class="section-sub">Signature dishes</div>
@@ -767,7 +741,6 @@
         </div>
     </section>
 
-    <!-- КАРУСЕЛЬ ДЛЯ КОКТЕЙЛЕЙ -->
     <section id="cocktails">
         <div class="container">
             <div class="section-sub">Mixology art</div>
@@ -785,7 +758,8 @@
             </div>
         </div>
     </section>
-        <!-- БЛОК ОТЗЫВОВ -->
+
+    <!-- БЛОК ОТЗЫВОВ -->
     <section id="reviews">
         <div class="container">
             <div class="section-sub">Guest reviews</div>
@@ -793,10 +767,9 @@
             
             <div class="reviews-container">
                 <div class="reviews-grid" id="reviewsGrid">
-                    <!-- Отзывы будут загружаться сюда -->
+                    <!-- Отзывы загрузятся через JavaScript -->
                 </div>
                 
-                <!-- Форма добавления отзыва -->
                 <div class="review-form-container">
                     <h3>Leave your review</h3>
                     <form id="reviewForm">
@@ -885,7 +858,6 @@
         { name: "Pike perch with potato mousse and miso", desc: "Delicate pike perch, silky potato mousse.", img: "images/pike-perch.jpg" }
     ];
 
-    // Данные для коктейлей
     const cocktailItems = [
         { name: "The Sketch", desc: "Gin, artichoke liqueur, lemon, rosemary.", img: "images/the-sketch.jpg" },
         { name: "White Night", desc: "Vodka, elderflower, prosecco, white peach.", img: "images/white-night.jpg" },
@@ -899,7 +871,6 @@
         { name: "Narva Outpost", desc: "Non-alcoholic: smoked tea, cardamom, apple.", img: "images/narva-outpost.jpg" }
     ];
 
-    // Функция создания карточки
     function createCard(item, type) {
         const div = document.createElement('div');
         div.className = 'menu-item-card';
@@ -918,7 +889,6 @@
         return div;
     }
 
-    // Заполняем карусели
     const foodGrid = document.getElementById('foodMenuGrid');
     if(foodGrid) {
         foodItems.forEach(item => {
@@ -933,40 +903,30 @@
         });
     }
 
-    // ========== ФУНКЦИИ ДЛЯ КАРУСЕЛИ ==========
     function setupCarousel(wrapperId, prevBtnId, nextBtnId) {
         const wrapper = document.getElementById(wrapperId);
         if (!wrapper) return;
         
         const prevBtn = document.getElementById(prevBtnId);
         const nextBtn = document.getElementById(nextBtnId);
-        
-        const scrollAmount = 280; // Пикселей за прокрутку
+        const scrollAmount = 280;
         
         if (prevBtn) {
             prevBtn.addEventListener('click', () => {
-                wrapper.scrollBy({
-                    left: -scrollAmount,
-                    behavior: 'smooth'
-                });
+                wrapper.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
             });
         }
         
         if (nextBtn) {
             nextBtn.addEventListener('click', () => {
-                wrapper.scrollBy({
-                    left: scrollAmount,
-                    behavior: 'smooth'
-                });
+                wrapper.scrollBy({ left: scrollAmount, behavior: 'smooth' });
             });
         }
         
-        // Скрываем кнопки, если контент не прокручивается
         function checkButtons() {
             if (prevBtn && nextBtn) {
                 const canScrollLeft = wrapper.scrollLeft > 0;
                 const canScrollRight = wrapper.scrollLeft + wrapper.clientWidth < wrapper.scrollWidth;
-                
                 prevBtn.style.opacity = canScrollLeft ? '1' : '0.3';
                 nextBtn.style.opacity = canScrollRight ? '1' : '0.3';
             }
@@ -977,46 +937,32 @@
         setTimeout(checkButtons, 100);
     }
     
-    // Активируем обе карусели
     setupCarousel('foodCarouselWrapper', 'foodPrevBtn', 'foodNextBtn');
     setupCarousel('cocktailCarouselWrapper', 'cocktailPrevBtn', 'cocktailNextBtn');
-        // ========== ОТЗЫВЫ (с сохранением в localStorage) ==========
-    
-    // Загрузка отзывов из localStorage
+
+    // ========== ОТЗЫВЫ ==========
     function loadReviews() {
         const savedReviews = localStorage.getItem('flavourReviews');
         if (savedReviews) {
             return JSON.parse(savedReviews);
         }
-        // Стартовые отзывы
         return [
-            {
-                name: "Lukas from Berlin",
-                rating: 5,
-                text: "Amazing place! The concept 'Russian tastes in European traditions' is brilliant. The food was delicious and the service was perfect.",
-                date: "2026-05-15"
-            },
-            {
-                name: "Sophie from Munich",
-                rating: 5,
-                text: "We loved the atmosphere and the wine selection. Definitely coming back on our next trip to Kaliningrad!",
-                date: "2026-05-10"
-            },
-            {
-                name: "Anna from Moscow",
-                rating: 4,
-                text: "Очень вкусно! Необычная подача привычных блюд. Обязательно вернусь.",
-                date: "2026-05-05"
-            }
+            { name: "Lukas from Berlin", rating: 5, text: "Amazing place! The concept 'Russian tastes in European traditions' is brilliant. The food was delicious and the service was perfect.", date: "2026-05-15" },
+            { name: "Sophie from Munich", rating: 5, text: "We loved the atmosphere and the wine selection. Definitely coming back on our next trip to Kaliningrad!", date: "2026-05-10" },
+            { name: "Anna from Moscow", rating: 4, text: "Очень вкусно! Необычная подача привычных блюд. Обязательно вернусь.", date: "2026-05-05" }
         ];
     }
     
-    // Сохранение отзывов в localStorage
     function saveReviews(reviews) {
         localStorage.setItem('flavourReviews', JSON.stringify(reviews));
     }
     
-    // Отображение отзывов на странице
+    function escapeHtml(text) {
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+    
     function displayReviews() {
         const reviews = loadReviews();
         const reviewsGrid = document.getElementById('reviewsGrid');
@@ -1039,30 +985,15 @@
         });
     }
     
-    // Защита от XSS
-    function escapeHtml(text) {
-        const div = document.createElement('div');
-        div.textContent = text;
-        return div.innerHTML;
-    }
-    
-    // Добавление нового отзыва
     function addReview(name, rating, text) {
         const reviews = loadReviews();
         const today = new Date().toISOString().slice(0, 10);
-        reviews.unshift({
-            name: name,
-            rating: parseInt(rating),
-            text: text,
-            date: today
-        });
-        // Ограничим количество отзывов до 20
+        reviews.unshift({ name: name, rating: parseInt(rating), text: text, date: today });
         if (reviews.length > 20) reviews.pop();
         saveReviews(reviews);
         displayReviews();
     }
     
-    // Обработка формы
     const reviewForm = document.getElementById('reviewForm');
     if (reviewForm) {
         reviewForm.addEventListener('submit', (e) => {
@@ -1081,7 +1012,6 @@
         });
     }
     
-    // Инициализация отзывов при загрузке страницы
     displayReviews();
 </script>
 </body>
