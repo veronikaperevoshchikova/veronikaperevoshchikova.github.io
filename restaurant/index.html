@@ -403,6 +403,10 @@
         }
 
         /* ========== СТИЛИ ДЛЯ ОТЗЫВОВ ========== */
+        .reviews-section {
+            background: #FFFFFF;
+        }
+        
         .reviews-container {
             margin-top: 48px;
         }
@@ -760,14 +764,14 @@
     </section>
 
     <!-- БЛОК ОТЗЫВОВ -->
-    <section id="reviews">
+    <section id="reviews" class="reviews-section">
         <div class="container">
             <div class="section-sub">Guest reviews</div>
             <h2>WHAT OUR GUESTS SAY</h2>
             
             <div class="reviews-container">
                 <div class="reviews-grid" id="reviewsGrid">
-                    <!-- Отзывы загрузятся через JavaScript -->
+                    <!-- Отзывы будут загружены через JavaScript -->
                 </div>
                 
                 <div class="review-form-container">
@@ -946,6 +950,7 @@
         if (savedReviews) {
             return JSON.parse(savedReviews);
         }
+        // Начальные отзывы
         return [
             { name: "Lukas from Berlin", rating: 5, text: "Amazing place! The concept 'Russian tastes in European traditions' is brilliant. The food was delicious and the service was perfect.", date: "2026-05-15" },
             { name: "Sophie from Munich", rating: 5, text: "We loved the atmosphere and the wine selection. Definitely coming back on our next trip to Kaliningrad!", date: "2026-05-10" },
@@ -966,7 +971,10 @@
     function displayReviews() {
         const reviews = loadReviews();
         const reviewsGrid = document.getElementById('reviewsGrid');
-        if (!reviewsGrid) return;
+        if (!reviewsGrid) {
+            console.log("reviewsGrid не найден");
+            return;
+        }
         
         reviewsGrid.innerHTML = '';
         reviews.forEach(review => {
